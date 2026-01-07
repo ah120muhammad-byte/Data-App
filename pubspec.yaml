@@ -1,0 +1,21 @@
+name: data_app
+description: Educational App
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  firebase_core: ^2.27.0
+  firebase_auth: ^4.17.0
+  cloud_firestore: ^4.15.0
+  firebase_storage: ^11.6.0
+  image_picker: ^1.0.7
+  file_picker: ^6.1.1
+  syncfusion_flutter_pdfviewer: ^24.2.9
+  just_audio: ^0.9.36
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
