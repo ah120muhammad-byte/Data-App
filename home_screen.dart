@@ -1,10 +1,9 @@
+
 import 'package:flutter/material.dart';
 import 'category_screen.dart';
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
-
-  final categories = const [
+  final categories = [
     {'id': '1', 'title': 'Anatomy', 'image': 'assets/images/anatomy.png'},
     {'id': '2', 'title': 'Physiology', 'image': 'assets/images/physiology.png'},
   ];
@@ -12,12 +11,15 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Categories")),
+      appBar: AppBar(title: Text("Categories")),
       body: GridView.builder(
-        padding: const EdgeInsets.all(16),
+        padding: EdgeInsets.all(16),
         itemCount: categories.length,
-        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 2, crossAxisSpacing: 12, mainAxisSpacing: 12),
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 2,
+          crossAxisSpacing: 12,
+          mainAxisSpacing: 12,
+        ),
         itemBuilder: (ctx, index) {
           final cat = categories[index];
           return GestureDetector(
@@ -34,16 +36,16 @@ class HomeScreen extends StatelessWidget {
             },
             child: Card(
               shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(16)),
+                borderRadius: BorderRadius.circular(16),
+              ),
               elevation: 4,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Image.asset(cat['image']!, height: 80),
-                  const SizedBox(height: 10),
+                  Icon(Icons.folder, size: 60),
+                  SizedBox(height: 10),
                   Text(cat['title']!,
-                      style: const TextStyle(
-                          fontSize: 18, fontWeight: FontWeight.bold))
+                      style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold))
                 ],
               ),
             ),

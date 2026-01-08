@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'screens/home_screen.dart';
 
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Data App',
-      home: const HomeScreen(),
+      home: HomeScreen(),
     );
   }
 }
