@@ -6,6 +6,4 @@ pluginManagement {
     }
 }
 
-includeBuild('../packages/flutter_tools/gradle')
-
 include ':app'
