@@ -1,0 +1,1 @@
+// Content Card widget placeholder

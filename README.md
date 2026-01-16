@@ -1,1 +1,1 @@
-Data App - Flutter Educational Application
+Android platform folder placeholder

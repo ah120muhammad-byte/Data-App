@@ -1,22 +1,18 @@
-
-name: data_app
-description: Educational App
+name: medidata
+description: MediData Flutter app
 environment:
   sdk: '>=3.0.0 <4.0.0'
-
 dependencies:
   flutter:
     sdk: flutter
-  firebase_core: ^2.27.0
-  firebase_auth: ^4.17.0
-  cloud_firestore: ^4.15.0
-  firebase_storage: ^11.6.0
-  image_picker: ^1.0.7
-  file_picker: ^6.1.1
-  syncfusion_flutter_pdfviewer: ^24.2.9
-  just_audio: ^0.9.36
-
-flutter:
-  uses-material-design: true
-  assets:
-    - assets/images/
+  provider: ^6.0.0
+  firebase_core: ^2.0.0
+  firebase_auth: ^4.0.0
+  cloud_firestore: ^4.0.0
+  firebase_storage: ^11.0.0
+  dio: ^5.0.0
+  path_provider: ^2.0.0
+  permission_handler: ^10.0.0
+  open_file: ^3.2.1
+  webview_flutter: ^4.0.0
+  flutter_pdfview: ^1.2.3
