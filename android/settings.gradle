@@ -1,9 +1,11 @@
 pluginManagement {
     repositories {
-        gradlePluginPortal()
         google()
         mavenCentral()
+        gradlePluginPortal()
     }
 }
-rootProject.name = 'medidata'
+
+includeBuild('../packages/flutter_tools/gradle')
+
 include ':app'
